@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="Буквы" id="3">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+			<SearchOnInput>DontUse</SearchOnInput>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Буквы</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="БуквыКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="БуквыКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="БуквыРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="БуквыСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Буквы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БуквыСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="БуквыСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="БуквыСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Буквы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БуквыСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="БуквыСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="БуквыУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Буквы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="БуквыУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="БуквыУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="БуквыНомерСтроки" id="6">
+					<DataPath>Объект.Буквы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БуквыНомерСтрокиКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="БуквыНомерСтрокиРасширеннаяПодсказка" id="23"/>
+				</LabelField>
+				<InputField name="БуквыБуква" id="8">
+					<DataPath>Объект.Буквы.Буква</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БуквыБукваКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="БуквыБукваРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="БуквыКоличество" id="10">
+					<DataPath>Объект.Буквы.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БуквыКоличествоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="БуквыКоличествоРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Слова</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
